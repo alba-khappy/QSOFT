@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 135px;
+}
+
+/*header*/
+
+header {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header--right-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header--input {
+    height: 40px;
+    width: 65%;
+    background: #fff url("https://khapilinaalbina.ru/QSOFT/loupe.svg") 10px 10px no-repeat;
+    border: 1px solid #EBEBF1;
+    border-radius: 5px;
+    padding: 0 38px;
+    margin: 0 20px;
+}
+
+.header--input::placeholder {
+    letter-spacing: 1px;
+    color: #BBC4D6;
+}
+
+.header--right-part--p {
+    color: #768298;
+    letter-spacing: 0.01em;
+    margin-right: 10px;
+}
+
+.header--right-part::before {
+    content: '';
+    height: 80px;
+    border-left: 1px solid #EBEBF1;
+    margin-right: 20px;
+}
+
+.header--mob-personal-area {
+    display: none;
+}
+
+/*main*/
+
+
+.main--padding-top{
+    padding-top: 80px;
+}
+
+.main__h1 {
+    margin-bottom: 35px;
+    font-size: 36px;
+    font-weight: 500;
+    color: #121920;
+}
+
+.main__ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: calc(100% + 30px);
+}
+
+.main__li {
+    width: 270px;
+    height: 120px;
+    background-position: center center;
+    list-style-type: none;
+    border: 1px solid #EBEBF1;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.main__li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.main__li:hover {
+    cursor: pointer;
+    box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+}
+
+.main__li:first-child {
+    background-image: url('https://khapilinaalbina.ru/QSOFT/henk.svg');
+}
+
+.main__li:nth-child(2) {
+    background-image: url('https://khapilinaalbina.ru/QSOFT/john.png');
+}
+
+.main__li:nth-child(3) {
+    background-image: url('https://khapilinaalbina.ru/QSOFT/mac.png');
+}
+
+.main__li:nth-child(4) {
+    background-image: url('https://khapilinaalbina.ru/QSOFT/ikea.png');
+}
+
+.main__li:nth-child(5) {
+    background-image: url('https://khapilinaalbina.ru/QSOFT/ree.png');
+}
+
+.main__li:nth-child(6) {
+    background-image: url('https://khapilinaalbina.ru/QSOFT/nike.png');
+}
+
+.main__li:last-child {
+    background-image: url('https://khapilinaalbina.ru/QSOFT/cat.png');
+}
+
+
+@media (max-width: 990px) and (min-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .header--input {
+        width: 47%;
+    }
+
+    .main__h1 {
+        font-size: 28px;
+    }
+
+    .main__ul {
+        width: calc(100% + 22px);
+    }
+
+    .main__li:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .main__li {
+        width: 230px;
+        margin-bottom: 20px;
+    }
+
+    .main__li:nth-child(2) {
+        background-size: 80%;
+    }
+
+    .main__li:nth-child(3){
+        background-size: 43%;
+    }
+
+    .main__li:nth-child(4){
+        background-size: 77%;
+    }
+
+    .main__li:nth-child(5){
+        background-size: 82%;
+    }
+
+    .main__li:nth-child(6){
+        background-size: 62%;
+    }
+
+    .main__li:last-child {
+        background-size: 86%;
+    }
+}
+
+
+@media (max-width: 767px) and (min-width: 376px) {
+
+    header::after {
+        content: '';
+        height: 1px;
+        background-color: #BBC4D6;
+        width: 100%;
+        position: absolute;
+        top: 63px;
+        opacity: 0.5;
+    }
+
+    .header--left-part {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .header--mob-personal-area {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url('https://khapilinaalbina.ru/QSOFT/lk.svg');
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: inherit;
+        padding-top: 17px;
+    }
+
+    .header > img {
+        margin-bottom: 20px;
+    }
+
+    .header--input {
+        width: 100%;
+        height: 36px;
+        background: #fff url(https://khapilinaalbina.ru/QSOFT/loupe.svg) 3px 8px no-repeat;
+        border: none;
+        padding: 0 30px;
+        margin: 0;
+    }
+
+    .header--right-part {
+        display: none;
+    }
+
+    .main--padding-top {
+        padding-top: 77px;
+    }
+
+    .main__h1 {
+        font-size: 28px;
+    }
+
+    .main__li {
+        width: 230px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .main__li:nth-child(2) {
+        background-size: 80%;
+    }
+
+    .main__li:nth-child(3){
+        background-size: 43%;
+    }
+
+    .main__li:nth-child(4){
+        background-size: 77%;
+    }
+
+    .main__li:nth-child(5){
+        background-size: 82%;
+    }
+
+    .main__li:nth-child(6){
+        background-size: 62%;
+    }
+
+    .main__li:last-child {
+        background-size: 86%;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    header::after {
+        content: '';
+        height: 1px;
+        background-color: #BBC4D6;
+        width: 100%;
+        position: absolute;
+        top: 63px;
+        opacity: 0.5;
+    }
+
+    .header--left-part {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .header--mob-personal-area {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url('https://khapilinaalbina.ru/QSOFT/lk.svg');
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: inherit;
+        padding-top: 17px;
+    }
+
+    .header > img {
+        margin-bottom: 20px;
+    }
+
+    .header--input {
+        width: 100%;
+        height: 36px;
+        background: #fff url(https://khapilinaalbina.ru/QSOFT/loupe.svg) 3px 8px no-repeat;
+        border: none;
+        padding: 0 30px;
+        margin: 0;
+    }
+
+    .header--right-part {
+        display: none;
+    }
+
+    .main__h1 {
+        font-size: 28px;
+    }
+
+    .main__ul {
+        width: 100%;
+        justify-content:center;
+    }
+
+    .main__li {
+        width: 335px;
+        height: 140px;
+        margin-bottom: 20px;
+    }
+
+    .main__li:first-child, .main__li:nth-child(2), .main__li:nth-child(3), .main__li:nth-child(4), .main__li:nth-child(5), .main__li:nth-child(6) {
+        margin-right: 0;
+    }
+
+    .main__li:first-child {
+        background-size: 44%;
+    }
+    
+    .main__li:nth-child(2) {
+        background-size: 70%;
+    }
+    
+    .main__li:nth-child(3) {
+        background-size: 29%;
+    }
+    
+    .main__li:nth-child(4) {
+        background-size: 58%;
+    }
+    
+    .main__li:nth-child(5) {
+        background-size: 70%;
+    }
+    
+    .main__li:nth-child(6) {
+        background-size: 42%;
+    }
+    
+    .main__li:last-child {
+        background-size: 74%;
+    }
+
+}
